@@ -1,0 +1,212 @@
+:root {
+  --main-bg-color: rgb(67, 74, 165);
+  --color-white: #fff;
+  --color-main: var(--main-bg-color);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  height: 1100px;
+}
+.header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-bg-color);
+  color: var(--color-white);
+}
+.header-main-title {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.header-title {
+  font-size: 30px;
+  font-weight: 300;
+}
+.header-title-container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-container {
+  display: flex;
+  justify-content:center;
+}
+.main {
+  width: 70%;
+  height: 100%;
+}
+.aside {
+  width:30%;
+  height: 100%;
+}
+.article {
+  margin: 3px;
+  padding: 3px;
+  height: auto;
+  font-size: 16px;
+  color: var(--color-main);
+}
+.article-title {
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--color-main);
+}
+.aside .article-title {
+  text-align: right;
+}
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: var(--main-bg-color);
+}
+.article-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.article-content-info {
+  text-align: right;
+  min-width: 200px;
+}
+.article-content-info li {
+  list-style: none;
+}
+.article-content img {
+  width: 15px;
+  margin-left: 6px;
+  margin-bottom: -3px;
+  filter: invert(72%) sepia(58%) saturate(1%) hue-rotate(314deg) brightness(102%) contrast(86%);
+}
+.article-right-side-content {
+  padding: 20px 4px;
+  font-size: 20px;
+}
+.content-title {
+  font-size: 15px;
+  font-weight: bold;
+}
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 1100px;
+  }
+  .header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-bg-color);
+    color: var(--color-white);
+  }
+  .header-main-title {
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .header-title {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  .header-title-container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-container {
+    display: flex;
+    justify-content:center;
+  }
+  .main {
+    width: 70%;
+    height: 100%;
+  }
+  .aside {
+    width:30%;
+    height: 100%;
+  }
+  .article {
+    margin: 3px;
+    padding: 3px;
+    height: auto;
+    font-size: 12px;
+    color: var(--color-main);
+  }
+  .article-title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--color-main);
+  }
+  .aside .article-title {
+    text-align: right;
+  }
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: var(--main-bg-color);
+  }
+  .article-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .article-content-info {
+    text-align: right;
+    min-width: 200px;
+  }
+  .article-content-info li {
+    list-style: none;
+  }
+  .article-content img {
+    width: 15px;
+    margin-top: 4px;
+    margin-left: 6px;
+    margin-bottom: -2px;
+    filter: invert(72%) sepia(58%) saturate(1%) hue-rotate(314deg) brightness(102%) contrast(86%);
+  }
+  .article-right-side-content {
+    padding: 20px 4px;
+    font-size: 16px;
+  }
+  .content-title {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
