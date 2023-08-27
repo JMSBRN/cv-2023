@@ -210,3 +210,13 @@ body {
     font-weight: bold;
   }
 }
+
+.labelsPanel {
+  display: flex;
+  flex-wrap: wrap;
+}
+.labelsPanel img {
+  margin: 0 3px;
+  width: 60px;
+  object-fit: contain;
+}
